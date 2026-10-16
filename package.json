@@ -1,0 +1,11 @@
+{
+  "name": "central-aplicacoes",
+  "version": "1.0.0",
+  "description": "Central de Aplicações - painel de sites e manuais. Criado por Carlos Arvela.",
+  "author": "Carlos Arvela",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

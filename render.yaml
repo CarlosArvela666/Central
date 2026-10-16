@@ -1,0 +1,26 @@
+# Central de Aplicações - Criado por Carlos Arvela
+# Blueprint para o Render (https://render.com). O disco persistente exige um plano pago.
+# Sem disco (plano gratuito) os dados repõem-se sempre que o serviço reinicia.
+services:
+  - type: web
+    name: central-aplicacoes
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_USER
+        value: admin
+      - key: ADMIN_PASS
+        sync: false          # defines no painel do Render
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: dados
+      mountPath: /var/data
+      sizeGB: 1

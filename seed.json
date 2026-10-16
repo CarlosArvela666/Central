@@ -1,0 +1,74 @@
+{
+  "sites": [
+    {
+      "id": "s-diario",
+      "n": "Diário de Trabalho",
+      "u": "https://claude.ai/artifact/LwKYDu2Wj896GJT276f3bP",
+      "c": "Trabalho",
+      "d": "Registo diário da atividade."
+    },
+    {
+      "id": "s-venc",
+      "n": "Visão do Vencimento",
+      "u": "https://vencimento.onrender.com/",
+      "c": "Finanças",
+      "d": "Panorama do vencimento."
+    }
+  ],
+  "manuals": [
+    {
+      "id": "man-diario",
+      "t": "Diário de Trabalho",
+      "d": "tarefas, horas, faltas, notas, senhas, backup",
+      "ch": [
+        {
+          "t": "1. Tarefas",
+          "b": "1. No separador **Tarefas**, escreve a tarefa no campo e prime **Enter** ou toca em **Adicionar**.\n2. Marca as tarefas como concluídas à medida que as terminas.\n3. Usa **Trazer pendentes de ontem** para passar para hoje o que ficou por fazer.\n4. Para ver outro dia, toca nele na grelha dos **Últimos 30 dias** (quanto mais escuro, mais tarefas concluídas) e edita à vontade. **Voltar a hoje** regressa ao dia atual.\n\n**Relatório do dia:** é gerado automaticamente a partir das tarefas. Podes usar **✨ Melhorar texto** para o polir, **Copiar** para colar noutro sítio ou **Guardar .txt** para ficheiro.\n\n**Histórico:** por defeito os registos antigos são apagados. Ativa **Manter o histórico para sempre** se quiseres conservá-los."
+        },
+        {
+          "t": "2. Horas extra e banco de horas",
+          "b": "1. Em **Registar horas extra**, indica a **data** e as **horas** (aceita `1,5` ou `1:30`).\n2. Escolhe o **tipo**: *Horas extra feitas (+)* ou *Horas gozadas / compensação (−)*. Podes juntar um motivo (opcional) e tocar em **Adicionar**.\n\n**Banco de horas:** mostra o *Saldo atual*. Define o *Saldo anterior* (pode ser negativo; ex.: `5` ou `-2:30`) e as *Horas por dia de trabalho*, e guarda em **Guardar definições**.\n\n> As horas extra somam ao saldo e as gozadas descontam. Quando os registos antigos são apagados, o saldo mantém-se em «Saldo anterior».\n\n**Resumo:** vê as horas deste mês e dos últimos 3 meses (os registos ficam guardados 3 meses, a não ser que atives **Manter para sempre**). Exporta com **Copiar** ou **Guardar .txt**."
+        },
+        {
+          "t": "3. Faltas e dias tirados",
+          "b": "1. Em **Registar falta ou dia tirado**, escolhe a **data de início** e, se for mais do que um dia, a **data final** (opcional).\n2. Escolhe o **tipo**: *Falta*, *Dia tirado* ou *Baixa médica*.\n3. Se o dia deve sair do banco de horas, marca **Descontar do banco de horas** (dias × horas por dia).\n4. Junta um motivo, se quiseres, e toca em **Adicionar**.\n\nO resumo conta apenas **dias úteis (seg–sex)**, para este mês e para os últimos 3 meses. Também podes copiar, guardar em .txt ou manter para sempre."
+        },
+        {
+          "t": "4. Notas",
+          "b": "1. Escreve a nota (e o título) e toca em **Guardar nota**; **Cancelar** descarta.\n2. Em **As tuas notas** consegues rever tudo e usar **Pesquisar nas notas**.\n\nAs notas ficam guardadas até as apagares."
+        },
+        {
+          "t": "5. Senhas (cofre)",
+          "b": "1. Na primeira vez, escolhe uma **palavra-passe mestra** (mínimo 8 caracteres), repete-a e toca em **Criar cofre**.\n2. Para guardar um acesso, preenche os campos, usa **Gerar** para criar uma palavra-passe forte e o **👁** para a ver. Toca em **Guardar**.\n3. O cofre bloqueia sozinho após 2 minutos sem atividade ou ao sair do separador. Podes bloquear a qualquer momento em **🔒 Bloquear** e voltar a abrir com **Desbloquear**.\n\n> **Importante:** tudo fica cifrado neste dispositivo. Se esqueceres a palavra-passe mestra não há recuperação (só apagar o cofre). Para contas críticas, como banco ou email principal, é mais seguro um gestor de palavras-passe dedicado."
+        },
+        {
+          "t": "6. Cópia de segurança (Backup)",
+          "b": "1. Em **Guardar cópia de segurança**, decide se incluis o cofre de senhas (continua cifrado).\n2. Escolhe **Copiar texto** ou **Guardar ficheiro** e arquiva-o num sítio seguro (email, pen).\n\n**Repor:** escolhe o ficheiro/texto e o modo — **Juntar** mantém o que já tens e acrescenta o que falta; **Substituir tudo** apaga os dados atuais e fica só o da cópia. Termina em **Importar**.\n\n> Faz uma cópia com regularidade, sobretudo antes de limpar o navegador ou mudar de dispositivo."
+        }
+      ]
+    },
+    {
+      "id": "man-venc",
+      "t": "Visão do Vencimento",
+      "d": "contas, análise mensal, histórico, backup",
+      "ch": [
+        {
+          "t": "1. Contas bancárias e perfil",
+          "b": "A página inicial mostra o **Perfil** (ainda «por definir») e a lista de **Contas bancárias**. Os dados de todas as contas ficam reunidos nesta vista."
+        },
+        {
+          "t": "2. Analisar um mês",
+          "b": "1. Escolhe o **Mês** que queres ver.\n2. Toca em **Analisar este mês** para obter a análise desse período."
+        },
+        {
+          "t": "3. Histórico",
+          "b": "A secção **Histórico** reúne as análises anteriores para consulta e comparação."
+        },
+        {
+          "t": "4. Definições e backup",
+          "b": "- **Duração do histórico:** guardar só os últimos 5 meses, ou guardar permanentemente (sem limite).\n- **Backup (todas as contas):** *Descarregar backup* (ficheiro) ou *Copiar backup* (texto).\n- **Restaurar:** *Importar ficheiro…* ou *Importar texto*.\n\n> Faz um backup antes de mudar de dispositivo ou limpar o navegador."
+        }
+      ]
+    }
+  ]
+}
