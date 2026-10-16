@@ -3,14 +3,14 @@
     {
       "id": "s-diario",
       "n": "Diário de Trabalho",
-      "u": "https://claude.ai/artifact/LwKYDu2Wj896GJT276f3bP",
+      "u": "https://diario-de-trabalho.onrender.com",
       "c": "Trabalho",
       "d": "Registo diário da atividade."
     },
     {
       "id": "s-venc",
       "n": "Visão do Vencimento",
-      "u": "https://vencimento.onrender.com/",
+      "u": "https://vencimento.onrender.com",
       "c": "Finanças",
       "d": "Panorama do vencimento."
     }
