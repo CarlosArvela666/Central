@@ -1,72 +1,60 @@
 {
   "sites": [
-    {
-      "id": "s-diario",
-      "n": "Diário de Trabalho",
-      "u": "https://diario-de-trabalho.onrender.com",
-      "c": "Trabalho",
-      "d": "Registo diário da atividade."
-    },
-    {
-      "id": "s-venc",
-      "n": "Visão do Vencimento",
-      "u": "https://vencimento.onrender.com",
-      "c": "Finanças",
-      "d": "Panorama do vencimento."
-    }
+    {"id":"s-diario","n":"Diário de Trabalho","u":"https://claude.ai/artifact/LwKYDu2Wj896GJT276f3bP","c":"Trabalho","d":"Registo diário da atividade."},
+    {"id":"s-venc","n":"Visão do Vencimento","u":"https://vencimento.onrender.com/","c":"Finanças","d":"Panorama do vencimento."}
   ],
   "manuals": [
     {
-      "id": "man-diario",
-      "t": "Diário de Trabalho",
-      "d": "tarefas, horas, faltas, notas, senhas, backup",
-      "ch": [
+      "id":"man-diario",
+      "t":"Diário de Trabalho",
+      "d":"Guia de tarefas, horas extra, banco de horas, faltas, notas, cofre de senhas e cópias de segurança.",
+      "ch":[
         {
-          "t": "1. Tarefas",
-          "b": "1. No separador **Tarefas**, escreve a tarefa no campo e prime **Enter** ou toca em **Adicionar**.\n2. Marca as tarefas como concluídas à medida que as terminas.\n3. Usa **Trazer pendentes de ontem** para passar para hoje o que ficou por fazer.\n4. Para ver outro dia, toca nele na grelha dos **Últimos 30 dias** (quanto mais escuro, mais tarefas concluídas) e edita à vontade. **Voltar a hoje** regressa ao dia atual.\n\n**Relatório do dia:** é gerado automaticamente a partir das tarefas. Podes usar **✨ Melhorar texto** para o polir, **Copiar** para colar noutro sítio ou **Guardar .txt** para ficheiro.\n\n**Histórico:** por defeito os registos antigos são apagados. Ativa **Manter o histórico para sempre** se quiseres conservá-los."
+          "t":"1. Tarefas e relatório diário",
+          "b":"**Começar o dia**\n\n1. Abre o separador **Tarefas**.\n2. Escreve uma tarefa no campo de texto. Usa uma frase curta que te ajude a perceber o que tens de fazer.\n3. Prime **Enter** ou toca em **Adicionar**. Repete o processo para cada tarefa.\n4. À medida que terminares cada tarefa, marca-a como concluída.\n\n**Acompanhar e recuperar tarefas**\n\nA lista corresponde ao dia selecionado. Se estiveres a consultar outro dia, confirma a data antes de registar ou alterar informação. Para rever um dia anterior, escolhe-o na grelha **Últimos 30 dias**. A intensidade da cor indica visualmente o nível de conclusão: uma cor mais escura corresponde a mais tarefas concluídas. Usa **Voltar a hoje** para regressar ao dia atual.\n\nSe uma tarefa de ontem continuar pendente, usa **Trazer pendentes de ontem** para a passar para hoje. Antes de adicionar tarefas semelhantes manualmente, verifica se já foram trazidas, para evitares duplicados.\n\n**Relatório do dia**\n\nO relatório é composto automaticamente com base nas tarefas do dia selecionado. Revê o texto antes de o partilhares, sobretudo nomes, datas e detalhes que possam não fazer sentido fora do contexto.\n\n- **✨ Melhorar texto:** pede uma versão mais polida do texto. Lê o resultado e corrige qualquer detalhe que não corresponda ao que aconteceu.\n- **Copiar:** coloca o relatório na área de transferência para o colares noutra aplicação.\n- **Guardar .txt:** descarrega o relatório como ficheiro de texto.\n\n**Histórico**\n\nPor defeito, os registos antigos são eliminados segundo a retenção da aplicação. Ativa **Manter o histórico para sempre** se precisares de consultar registos sem esse limite. Decide a retenção de acordo com as regras de arquivo do teu trabalho e evita guardar informação pessoal desnecessária."
         },
         {
-          "t": "2. Horas extra e banco de horas",
-          "b": "1. Em **Registar horas extra**, indica a **data** e as **horas** (aceita `1,5` ou `1:30`).\n2. Escolhe o **tipo**: *Horas extra feitas (+)* ou *Horas gozadas / compensação (−)*. Podes juntar um motivo (opcional) e tocar em **Adicionar**.\n\n**Banco de horas:** mostra o *Saldo atual*. Define o *Saldo anterior* (pode ser negativo; ex.: `5` ou `-2:30`) e as *Horas por dia de trabalho*, e guarda em **Guardar definições**.\n\n> As horas extra somam ao saldo e as gozadas descontam. Quando os registos antigos são apagados, o saldo mantém-se em «Saldo anterior».\n\n**Resumo:** vê as horas deste mês e dos últimos 3 meses (os registos ficam guardados 3 meses, a não ser que atives **Manter para sempre**). Exporta com **Copiar** ou **Guardar .txt**."
+          "t":"2. Horas extra e banco de horas",
+          "b":"**Registar uma alteração de horas**\n\n1. Abre **Registar horas extra**.\n2. Escolhe a **data** a que as horas dizem respeito. Confirma a data antes de guardar, especialmente quando estás a lançar horas de um dia anterior.\n3. Introduz a duração. A aplicação aceita formatos como `1,5` (uma hora e meia) ou `1:30`.\n4. Seleciona o tipo de registo:\n   - **Horas extra feitas (+)** aumenta o saldo.\n   - **Horas gozadas / compensação (−)** reduz o saldo.\n5. Acrescenta um motivo, se for útil para explicar o registo, e toca em **Adicionar**.\n\nRegista separadamente períodos com datas ou motivos diferentes. Se notares um saldo inesperado, confirma primeiro as datas, os formatos de duração e se cada movimento foi registado como crédito ou compensação.\n\n**Configurar o saldo**\n\nA área **Banco de horas** apresenta o **Saldo atual**. Em **Saldo anterior**, introduz o valor que já existia antes dos registos guardados nesta aplicação; aceita valores positivos e negativos, por exemplo `5` ou `-2:30`. Define também **Horas por dia de trabalho**, que a aplicação usa como referência para converter dias em horas. Termina em **Guardar definições**.\n\nO saldo atual resulta do saldo anterior, acrescido das horas extra e reduzido das horas gozadas. Confirma que o saldo anterior não inclui novamente movimentos que já vais registar na aplicação, para evitar contabilizá-los duas vezes.\n\n> Quando registos antigos são eliminados pela retenção, o saldo que introduziste em **Saldo anterior** mantém-se. Guarda uma nota do valor de referência e da data a que corresponde para conseguires explicar a origem do saldo.\n\n**Resumos e retenção**\n\nO resumo mostra as horas do mês atual e dos últimos três meses. Usa **Copiar** para transferir o resumo para outra aplicação ou **Guardar .txt** para o arquivar. Os registos são guardados durante três meses, salvo se ativares **Manter para sempre**. Antes de depender do resumo para um fecho de período, verifica as datas incluídas e compara o saldo com os teus registos de trabalho."
         },
         {
-          "t": "3. Faltas e dias tirados",
-          "b": "1. Em **Registar falta ou dia tirado**, escolhe a **data de início** e, se for mais do que um dia, a **data final** (opcional).\n2. Escolhe o **tipo**: *Falta*, *Dia tirado* ou *Baixa médica*.\n3. Se o dia deve sair do banco de horas, marca **Descontar do banco de horas** (dias × horas por dia).\n4. Junta um motivo, se quiseres, e toca em **Adicionar**.\n\nO resumo conta apenas **dias úteis (seg–sex)**, para este mês e para os últimos 3 meses. Também podes copiar, guardar em .txt ou manter para sempre."
+          "t":"3. Faltas e dias tirados",
+          "b":"**Registar uma falta ou ausência**\n\n1. Abre **Registar falta ou dia tirado**.\n2. Escolhe a **data de início**. Para uma ausência de vários dias, preenche também a **data final**; para um único dia, deixa-a vazia.\n3. Seleciona o tipo adequado: **Falta**, **Dia tirado** ou **Baixa médica**.\n4. Se a ausência tiver de ser abatida ao banco de horas, ativa **Descontar do banco de horas**. A aplicação calcula o desconto usando o número de dias contabilizados e o valor de **Horas por dia de trabalho** definido no banco de horas.\n5. Acrescenta um motivo se precisares de contextualizar o registo e toca em **Adicionar**.\n\nAntes de guardar um intervalo de datas, confirma as datas de início e de fim e o tipo escolhido. Não atives o desconto por rotina: usa-o apenas quando esse período deve efetivamente reduzir o banco de horas.\n\n**Como ler o resumo**\n\nO resumo conta **dias úteis de segunda a sexta-feira** para o mês atual e para os últimos três meses. Não interpretes o total como uma contagem de dias de calendário. Confirma o período apresentado e os registos que lhe pertencem.\n\nPodes usar **Copiar** ou **Guardar .txt** para arquivar o resumo. A retenção segue a definição de histórico da aplicação; ativa **Manter para sempre** se precisares de conservar os registos sem o limite normal."
         },
         {
-          "t": "4. Notas",
-          "b": "1. Escreve a nota (e o título) e toca em **Guardar nota**; **Cancelar** descarta.\n2. Em **As tuas notas** consegues rever tudo e usar **Pesquisar nas notas**.\n\nAs notas ficam guardadas até as apagares."
+          "t":"4. Notas",
+          "b":"**Criar uma nota**\n\n1. Abre a área **Notas**.\n2. Escreve um **título** que facilite a pesquisa posterior.\n3. Introduz o conteúdo da nota. Organiza-o de forma que consigas reconhecer rapidamente o assunto e o contexto.\n4. Toca em **Guardar nota** para a conservar. Usa **Cancelar** para descartar o que estavas a escrever.\n\n**Consultar notas**\n\nEm **As tuas notas**, podes percorrer as notas existentes e usar **Pesquisar nas notas** para encontrar conteúdo. Experimenta termos do título ou do texto e revê os resultados antes de criar uma nova nota sobre o mesmo assunto.\n\nAs notas permanecem guardadas até as apagares. Evita incluir palavras-passe, dados bancários ou informação pessoal sensível numa nota comum; para credenciais, usa o cofre de senhas."
         },
         {
-          "t": "5. Senhas (cofre)",
-          "b": "1. Na primeira vez, escolhe uma **palavra-passe mestra** (mínimo 8 caracteres), repete-a e toca em **Criar cofre**.\n2. Para guardar um acesso, preenche os campos, usa **Gerar** para criar uma palavra-passe forte e o **👁** para a ver. Toca em **Guardar**.\n3. O cofre bloqueia sozinho após 2 minutos sem atividade ou ao sair do separador. Podes bloquear a qualquer momento em **🔒 Bloquear** e voltar a abrir com **Desbloquear**.\n\n> **Importante:** tudo fica cifrado neste dispositivo. Se esqueceres a palavra-passe mestra não há recuperação (só apagar o cofre). Para contas críticas, como banco ou email principal, é mais seguro um gestor de palavras-passe dedicado."
+          "t":"5. Senhas: cofre de credenciais",
+          "b":"**Criar o cofre pela primeira vez**\n\n1. Escolhe uma **palavra-passe mestra** com pelo menos oito caracteres. Usa uma combinação difícil de adivinhar e que não reutilizes noutros serviços.\n2. Repete a palavra-passe para confirmar e toca em **Criar cofre**.\n3. Guarda a palavra-passe mestra num local seguro: é necessária para voltar a abrir o cofre.\n\n**Guardar e consultar um acesso**\n\n1. Preenche os campos do acesso que queres guardar. Identifica claramente o serviço ou a conta.\n2. Se precisares de uma nova palavra-passe, toca em **Gerar** e avalia o resultado antes de o usar no serviço correspondente.\n3. Usa o ícone **👁** para revelar a palavra-passe quando for necessário e toca em **Guardar** para conservar o registo.\n4. Quando terminares, fecha ou bloqueia o cofre se fores deixar o dispositivo sem supervisão.\n\nO cofre bloqueia automaticamente após dois minutos sem atividade ou quando sais do separador. Também o podes bloquear manualmente em **🔒 Bloquear** e voltar a abrir em **Desbloquear**.\n\n> Os dados do cofre ficam cifrados neste dispositivo. Se esqueceres a palavra-passe mestra, não existe recuperação; a alternativa indicada é apagar o cofre e começar de novo, perdendo o acesso aos dados nele guardados. Para credenciais críticas, como banco ou email principal, considera um gestor de palavras-passe dedicado."
         },
         {
-          "t": "6. Cópia de segurança (Backup)",
-          "b": "1. Em **Guardar cópia de segurança**, decide se incluis o cofre de senhas (continua cifrado).\n2. Escolhe **Copiar texto** ou **Guardar ficheiro** e arquiva-o num sítio seguro (email, pen).\n\n**Repor:** escolhe o ficheiro/texto e o modo — **Juntar** mantém o que já tens e acrescenta o que falta; **Substituir tudo** apaga os dados atuais e fica só o da cópia. Termina em **Importar**.\n\n> Faz uma cópia com regularidade, sobretudo antes de limpar o navegador ou mudar de dispositivo."
+          "t":"6. Cópia de segurança e reposição",
+          "b":"**Criar uma cópia**\n\n1. Abre **Guardar cópia de segurança**.\n2. Decide se queres incluir o cofre de senhas. Quando incluído, o cofre permanece cifrado na cópia; continua a ser necessária a palavra-passe mestra para o usar.\n3. Escolhe **Copiar texto** ou **Guardar ficheiro**.\n4. Guarda a cópia num local seguro e identifica-a com uma data, para distinguires versões antigas. Não publiques o conteúdo nem o deixes numa pasta partilhada sem proteção.\n\nFaz uma cópia antes de limpar os dados do navegador, trocar de dispositivo ou fazer uma reposição. Uma cópia permite transportar dados, mas não substitui a criação periódica de cópias novas.\n\n**Restaurar uma cópia**\n\n1. Seleciona **Importar ficheiro…** ou **Importar texto**, conforme o formato guardado.\n2. Escolhe o modo de reposição:\n   - **Juntar** conserva os dados atuais e acrescenta o que falta. Usa-o quando queres combinar dados sem substituir a coleção atual; revê depois o resultado para detetar entradas repetidas.\n   - **Substituir tudo** apaga os dados atuais e deixa apenas os dados da cópia. Antes de confirmar, cria uma cópia da situação atual se houver algo que possas querer recuperar.\n3. Confirma a seleção e termina em **Importar**.\n4. Verifica tarefas, registos de horas, faltas, notas e, se incluído, o cofre.\n\nConfirma que escolheste o ficheiro correto antes de substituir tudo. Se a cópia incluir o cofre, conserva a palavra-passe mestra: a cópia cifrada não a recupera."
         }
       ]
     },
     {
-      "id": "man-venc",
-      "t": "Visão do Vencimento",
-      "d": "contas, análise mensal, histórico, backup",
-      "ch": [
+      "id":"man-venc",
+      "t":"Visão do Vencimento",
+      "d":"Guia de configuração do perfil e contas, análise mensal, consulta do histórico, retenção e cópias de segurança.",
+      "ch":[
         {
-          "t": "1. Contas bancárias e perfil",
-          "b": "A página inicial mostra o **Perfil** (ainda «por definir») e a lista de **Contas bancárias**. Os dados de todas as contas ficam reunidos nesta vista."
+          "t":"1. Perfil e contas bancárias",
+          "b":"**Primeira consulta**\n\nA página inicial apresenta a área **Perfil** e a lista de **Contas bancárias**. Quando o perfil aparece como **por definir**, começa por rever essa área e preencher ou confirmar os dados que a aplicação disponibiliza.\n\nConsulta as contas apresentadas e verifica que estás a olhar para o conjunto esperado. Os dados das contas são reunidos nesta vista para apoiar a consulta da situação global. Se uma conta estiver ausente ou apresentar valores inesperados, confirma primeiro os dados que introduziste e a conta selecionada antes de tirar conclusões da análise.\n\nMantém os dados do perfil e das contas atualizados quando houver alterações relevantes. Evita introduzir dados de acesso bancário: o manual descreve uma vista de contas e análises, não pede as credenciais de autenticação do banco."
         },
         {
-          "t": "2. Analisar um mês",
-          "b": "1. Escolhe o **Mês** que queres ver.\n2. Toca em **Analisar este mês** para obter a análise desse período."
+          "t":"2. Analisar um mês",
+          "b":"**Escolher o período**\n\n1. Na página da aplicação, localiza o seletor **Mês**.\n2. Escolhe o mês que pretendes consultar. Confirma o ano, sobretudo quando estás a rever meses de anos diferentes.\n3. Verifica que o perfil e as contas apresentados são os que queres considerar.\n4. Toca em **Analisar este mês** para gerar a análise do período selecionado.\n\nDepois da análise, lê o resultado com atenção e confirma que o mês analisado corresponde ao que escolheste. Usa a análise como uma síntese do período; se precisares de tomar uma decisão financeira, confirma os valores de origem e os movimentos relevantes nas contas.\n\nPara comparar períodos, seleciona cada mês e executa a análise correspondente. Mantém clara a distinção entre meses e guarda ou consulta as análises no **Histórico**."
         },
         {
-          "t": "3. Histórico",
-          "b": "A secção **Histórico** reúne as análises anteriores para consulta e comparação."
+          "t":"3. Histórico de análises",
+          "b":"**Consultar resultados anteriores**\n\nA secção **Histórico** reúne análises anteriores para consulta e comparação. Abre o período que pretendes rever e confirma a data ou o mês indicado antes de comparar o conteúdo com uma análise atual.\n\nPara uma comparação útil, consulta períodos equivalentes e verifica se as contas e os dados de perfil abrangidos são comparáveis. Uma alteração posterior dos dados pode fazer com que uma análise nova não corresponda exatamente ao contexto de uma análise antiga; usa a data do registo para entender a que período se refere.\n\nA quantidade de meses conservados depende da opção **Duração do histórico** nas definições. Se precisares de guardar análises para além desse prazo, escolhe a retenção permanente ou cria uma cópia de segurança antes de os registos antigos serem removidos."
         },
         {
-          "t": "4. Definições e backup",
-          "b": "- **Duração do histórico:** guardar só os últimos 5 meses, ou guardar permanentemente (sem limite).\n- **Backup (todas as contas):** *Descarregar backup* (ficheiro) ou *Copiar backup* (texto).\n- **Restaurar:** *Importar ficheiro…* ou *Importar texto*.\n\n> Faz um backup antes de mudar de dispositivo ou limpar o navegador."
+          "t":"4. Definições, cópia e reposição",
+          "b":"**Duração do histórico**\n\nNas definições, escolhe entre conservar apenas os últimos **5 meses** ou guardar o histórico **permanentemente**. Seleciona a opção que corresponde à tua necessidade de consulta e revê-a antes de um período de arquivo importante. A retenção permanente mantém mais registos disponíveis, por isso considera se precisas realmente desse histórico.\n\n**Criar uma cópia de segurança**\n\nA opção de backup abrange **todas as contas**. Podes escolher **Descarregar backup** para guardar um ficheiro ou **Copiar backup** para obter o conteúdo em texto. Guarda a cópia num local seguro e identifica-a com a data de criação. Faz uma cópia antes de mudar de dispositivo, limpar os dados do navegador ou restaurar outra versão.\n\n**Restaurar dados**\n\n1. Escolhe **Importar ficheiro…** para carregar um backup guardado como ficheiro ou **Importar texto** para colar o conteúdo copiado.\n2. Seleciona o backup correto e confirma a operação.\n3. Depois da reposição, verifica as contas e o histórico antes de fazer uma nova análise.\n\nUma reposição pode alterar os dados existentes. Antes de a iniciar, cria uma cópia do estado atual se houver informação que queiras preservar. Mantém os backups privados, pois podem conter informação financeira."
         }
       ]
     }
