@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<!--
+  ============================================================
+  CENTRAL DE APLICAÇÕES
+  ------------------------------------------------------------
+  Criado por: Carlos Arvela
+  Autor e responsável por este projeto: Carlos Arvela
+  Todos os direitos reservados © Carlos Arvela
+  ============================================================
+-->
+<meta charset="utf-8">
+<meta name="author" content="Carlos Arvela">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Central de Aplicações</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;600&display=swap">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#3b4fd8">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><img class="logo" src="/icon.svg" alt="Central de Aplicações"><div><b>Central</b><small>de Aplicações</small></div></div>
+    <div class="navl">Navegação</div>
+    <div class="nav" id="nav"></div>
+    <div class="sf"><button class="btn sm" id="admbtn" data-act="login"></button><div class="credit">Criado por <strong>Carlos Arvela</strong></div></div>
+  </aside>
+  <div class="content">
+    <div class="bar" id="bar">
+      <div class="sbox"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input class="search" id="q" type="search" placeholder="Pesquisar…" aria-label="Pesquisar"></div>
+      <span class="count" id="count"></span>
+    </div>
+    <div id="app"></div>
+    <footer>Central de Aplicações · Criado por <strong>Carlos Arvela</strong></footer>
+  </div>
+</div>
+<script src="/app.js" defer></script>
+</body>
+</html>
