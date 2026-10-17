@@ -90,6 +90,17 @@ function migrate() {
     if (s.n === 'Diário de Trabalho') { s.u = 'https://diario-de-trabalho.onrender.com'; changed = true; }
     if (s.n === 'Visão do Vencimento') { s.u = 'https://vencimento.onrender.com'; changed = true; }
   }
+  // Acrescenta a Agenda (site + manual) uma única vez
+  d.m = Array.isArray(d.m) ? d.m : [];
+  if (!d.m.includes('agenda-v1')) {
+    const seed = JSON.parse(fs.readFileSync(SEED_FILE, 'utf8'));
+    const site = seed.sites.find((x) => x.id === 's-agenda');
+    const man = seed.manuals.find((x) => x.id === 'man-agenda');
+    if (site && !d.sites.some((x) => x.id === site.id)) d.sites.push(site);
+    if (man && !d.manuals.some((x) => x.id === man.id)) d.manuals.push(man);
+    d.m.push('agenda-v1');
+    changed = true;
+  }
   if (changed) writeData(d);
 }
 function readData() {
@@ -185,6 +196,7 @@ async function api(req, res, pathname) {
     let b; try { b = await readBody(req); } catch (e) { return json(res, e.message === 'too_large' ? 413 : 400, { error: 'pedido_invalido' }); }
     const clean = validate(b);
     if (!clean) return json(res, 422, { error: 'dados_invalidos' });
+    clean.m = readData().m || []; // mantém as marcas de migração
     writeData(clean);
     return json(res, 200, clean);
   }

@@ -1,60 +1,130 @@
 {
   "sites": [
-    {"id":"s-diario","n":"Diário de Trabalho","u":"https://claude.ai/artifact/LwKYDu2Wj896GJT276f3bP","c":"Trabalho","d":"Registo diário da atividade."},
-    {"id":"s-venc","n":"Visão do Vencimento","u":"https://vencimento.onrender.com/","c":"Finanças","d":"Panorama do vencimento."}
+    {
+      "id": "s-diario",
+      "n": "Diário de Trabalho",
+      "u": "https://diario-de-trabalho.onrender.com",
+      "c": "Trabalho",
+      "d": "Registo diário da atividade."
+    },
+    {
+      "id": "s-venc",
+      "n": "Visão do Vencimento",
+      "u": "https://vencimento.onrender.com",
+      "c": "Finanças",
+      "d": "Panorama do vencimento."
+    },
+    {
+      "id": "s-agenda",
+      "n": "Agenda",
+      "u": "https://agenda-lqyf.onrender.com",
+      "c": "Trabalho",
+      "d": "Tarefas, compromissos e calendário."
+    }
   ],
   "manuals": [
     {
-      "id":"man-diario",
-      "t":"Diário de Trabalho",
-      "d":"Guia de tarefas, horas extra, banco de horas, faltas, notas, cofre de senhas e cópias de segurança.",
-      "ch":[
+      "id": "man-diario",
+      "t": "Diário de Trabalho",
+      "d": "tarefas, horas, faltas, notas, senhas, backup",
+      "ch": [
         {
-          "t":"1. Tarefas e relatório diário",
-          "b":"**Começar o dia**\n\n1. Abre o separador **Tarefas**.\n2. Escreve uma tarefa no campo de texto. Usa uma frase curta que te ajude a perceber o que tens de fazer.\n3. Prime **Enter** ou toca em **Adicionar**. Repete o processo para cada tarefa.\n4. À medida que terminares cada tarefa, marca-a como concluída.\n\n**Acompanhar e recuperar tarefas**\n\nA lista corresponde ao dia selecionado. Se estiveres a consultar outro dia, confirma a data antes de registar ou alterar informação. Para rever um dia anterior, escolhe-o na grelha **Últimos 30 dias**. A intensidade da cor indica visualmente o nível de conclusão: uma cor mais escura corresponde a mais tarefas concluídas. Usa **Voltar a hoje** para regressar ao dia atual.\n\nSe uma tarefa de ontem continuar pendente, usa **Trazer pendentes de ontem** para a passar para hoje. Antes de adicionar tarefas semelhantes manualmente, verifica se já foram trazidas, para evitares duplicados.\n\n**Relatório do dia**\n\nO relatório é composto automaticamente com base nas tarefas do dia selecionado. Revê o texto antes de o partilhares, sobretudo nomes, datas e detalhes que possam não fazer sentido fora do contexto.\n\n- **✨ Melhorar texto:** pede uma versão mais polida do texto. Lê o resultado e corrige qualquer detalhe que não corresponda ao que aconteceu.\n- **Copiar:** coloca o relatório na área de transferência para o colares noutra aplicação.\n- **Guardar .txt:** descarrega o relatório como ficheiro de texto.\n\n**Histórico**\n\nPor defeito, os registos antigos são eliminados segundo a retenção da aplicação. Ativa **Manter o histórico para sempre** se precisares de consultar registos sem esse limite. Decide a retenção de acordo com as regras de arquivo do teu trabalho e evita guardar informação pessoal desnecessária."
+          "t": "1. Tarefas",
+          "b": "1. No separador **Tarefas**, escreve a tarefa no campo e prime **Enter** ou toca em **Adicionar**.\n2. Marca as tarefas como concluídas à medida que as terminas.\n3. Usa **Trazer pendentes de ontem** para passar para hoje o que ficou por fazer.\n4. Para ver outro dia, toca nele na grelha dos **Últimos 30 dias** (quanto mais escuro, mais tarefas concluídas) e edita à vontade. **Voltar a hoje** regressa ao dia atual.\n\n**Relatório do dia:** é gerado automaticamente a partir das tarefas. Podes usar **✨ Melhorar texto** para o polir, **Copiar** para colar noutro sítio ou **Guardar .txt** para ficheiro.\n\n**Histórico:** por defeito os registos antigos são apagados. Ativa **Manter o histórico para sempre** se quiseres conservá-los."
         },
         {
-          "t":"2. Horas extra e banco de horas",
-          "b":"**Registar uma alteração de horas**\n\n1. Abre **Registar horas extra**.\n2. Escolhe a **data** a que as horas dizem respeito. Confirma a data antes de guardar, especialmente quando estás a lançar horas de um dia anterior.\n3. Introduz a duração. A aplicação aceita formatos como `1,5` (uma hora e meia) ou `1:30`.\n4. Seleciona o tipo de registo:\n   - **Horas extra feitas (+)** aumenta o saldo.\n   - **Horas gozadas / compensação (−)** reduz o saldo.\n5. Acrescenta um motivo, se for útil para explicar o registo, e toca em **Adicionar**.\n\nRegista separadamente períodos com datas ou motivos diferentes. Se notares um saldo inesperado, confirma primeiro as datas, os formatos de duração e se cada movimento foi registado como crédito ou compensação.\n\n**Configurar o saldo**\n\nA área **Banco de horas** apresenta o **Saldo atual**. Em **Saldo anterior**, introduz o valor que já existia antes dos registos guardados nesta aplicação; aceita valores positivos e negativos, por exemplo `5` ou `-2:30`. Define também **Horas por dia de trabalho**, que a aplicação usa como referência para converter dias em horas. Termina em **Guardar definições**.\n\nO saldo atual resulta do saldo anterior, acrescido das horas extra e reduzido das horas gozadas. Confirma que o saldo anterior não inclui novamente movimentos que já vais registar na aplicação, para evitar contabilizá-los duas vezes.\n\n> Quando registos antigos são eliminados pela retenção, o saldo que introduziste em **Saldo anterior** mantém-se. Guarda uma nota do valor de referência e da data a que corresponde para conseguires explicar a origem do saldo.\n\n**Resumos e retenção**\n\nO resumo mostra as horas do mês atual e dos últimos três meses. Usa **Copiar** para transferir o resumo para outra aplicação ou **Guardar .txt** para o arquivar. Os registos são guardados durante três meses, salvo se ativares **Manter para sempre**. Antes de depender do resumo para um fecho de período, verifica as datas incluídas e compara o saldo com os teus registos de trabalho."
+          "t": "2. Horas extra e banco de horas",
+          "b": "1. Em **Registar horas extra**, indica a **data** e as **horas** (aceita `1,5` ou `1:30`).\n2. Escolhe o **tipo**: *Horas extra feitas (+)* ou *Horas gozadas / compensação (−)*. Podes juntar um motivo (opcional) e tocar em **Adicionar**.\n\n**Banco de horas:** mostra o *Saldo atual*. Define o *Saldo anterior* (pode ser negativo; ex.: `5` ou `-2:30`) e as *Horas por dia de trabalho*, e guarda em **Guardar definições**.\n\n> As horas extra somam ao saldo e as gozadas descontam. Quando os registos antigos são apagados, o saldo mantém-se em «Saldo anterior».\n\n**Resumo:** vê as horas deste mês e dos últimos 3 meses (os registos ficam guardados 3 meses, a não ser que atives **Manter para sempre**). Exporta com **Copiar** ou **Guardar .txt**."
         },
         {
-          "t":"3. Faltas e dias tirados",
-          "b":"**Registar uma falta ou ausência**\n\n1. Abre **Registar falta ou dia tirado**.\n2. Escolhe a **data de início**. Para uma ausência de vários dias, preenche também a **data final**; para um único dia, deixa-a vazia.\n3. Seleciona o tipo adequado: **Falta**, **Dia tirado** ou **Baixa médica**.\n4. Se a ausência tiver de ser abatida ao banco de horas, ativa **Descontar do banco de horas**. A aplicação calcula o desconto usando o número de dias contabilizados e o valor de **Horas por dia de trabalho** definido no banco de horas.\n5. Acrescenta um motivo se precisares de contextualizar o registo e toca em **Adicionar**.\n\nAntes de guardar um intervalo de datas, confirma as datas de início e de fim e o tipo escolhido. Não atives o desconto por rotina: usa-o apenas quando esse período deve efetivamente reduzir o banco de horas.\n\n**Como ler o resumo**\n\nO resumo conta **dias úteis de segunda a sexta-feira** para o mês atual e para os últimos três meses. Não interpretes o total como uma contagem de dias de calendário. Confirma o período apresentado e os registos que lhe pertencem.\n\nPodes usar **Copiar** ou **Guardar .txt** para arquivar o resumo. A retenção segue a definição de histórico da aplicação; ativa **Manter para sempre** se precisares de conservar os registos sem o limite normal."
+          "t": "3. Faltas e dias tirados",
+          "b": "1. Em **Registar falta ou dia tirado**, escolhe a **data de início** e, se for mais do que um dia, a **data final** (opcional).\n2. Escolhe o **tipo**: *Falta*, *Dia tirado* ou *Baixa médica*.\n3. Se o dia deve sair do banco de horas, marca **Descontar do banco de horas** (dias × horas por dia).\n4. Junta um motivo, se quiseres, e toca em **Adicionar**.\n\nO resumo conta apenas **dias úteis (seg–sex)**, para este mês e para os últimos 3 meses. Também podes copiar, guardar em .txt ou manter para sempre."
         },
         {
-          "t":"4. Notas",
-          "b":"**Criar uma nota**\n\n1. Abre a área **Notas**.\n2. Escreve um **título** que facilite a pesquisa posterior.\n3. Introduz o conteúdo da nota. Organiza-o de forma que consigas reconhecer rapidamente o assunto e o contexto.\n4. Toca em **Guardar nota** para a conservar. Usa **Cancelar** para descartar o que estavas a escrever.\n\n**Consultar notas**\n\nEm **As tuas notas**, podes percorrer as notas existentes e usar **Pesquisar nas notas** para encontrar conteúdo. Experimenta termos do título ou do texto e revê os resultados antes de criar uma nova nota sobre o mesmo assunto.\n\nAs notas permanecem guardadas até as apagares. Evita incluir palavras-passe, dados bancários ou informação pessoal sensível numa nota comum; para credenciais, usa o cofre de senhas."
+          "t": "4. Notas",
+          "b": "1. Escreve a nota (e o título) e toca em **Guardar nota**; **Cancelar** descarta.\n2. Em **As tuas notas** consegues rever tudo e usar **Pesquisar nas notas**.\n\nAs notas ficam guardadas até as apagares."
         },
         {
-          "t":"5. Senhas: cofre de credenciais",
-          "b":"**Criar o cofre pela primeira vez**\n\n1. Escolhe uma **palavra-passe mestra** com pelo menos oito caracteres. Usa uma combinação difícil de adivinhar e que não reutilizes noutros serviços.\n2. Repete a palavra-passe para confirmar e toca em **Criar cofre**.\n3. Guarda a palavra-passe mestra num local seguro: é necessária para voltar a abrir o cofre.\n\n**Guardar e consultar um acesso**\n\n1. Preenche os campos do acesso que queres guardar. Identifica claramente o serviço ou a conta.\n2. Se precisares de uma nova palavra-passe, toca em **Gerar** e avalia o resultado antes de o usar no serviço correspondente.\n3. Usa o ícone **👁** para revelar a palavra-passe quando for necessário e toca em **Guardar** para conservar o registo.\n4. Quando terminares, fecha ou bloqueia o cofre se fores deixar o dispositivo sem supervisão.\n\nO cofre bloqueia automaticamente após dois minutos sem atividade ou quando sais do separador. Também o podes bloquear manualmente em **🔒 Bloquear** e voltar a abrir em **Desbloquear**.\n\n> Os dados do cofre ficam cifrados neste dispositivo. Se esqueceres a palavra-passe mestra, não existe recuperação; a alternativa indicada é apagar o cofre e começar de novo, perdendo o acesso aos dados nele guardados. Para credenciais críticas, como banco ou email principal, considera um gestor de palavras-passe dedicado."
+          "t": "5. Senhas (cofre)",
+          "b": "1. Na primeira vez, escolhe uma **palavra-passe mestra** (mínimo 8 caracteres), repete-a e toca em **Criar cofre**.\n2. Para guardar um acesso, preenche os campos, usa **Gerar** para criar uma palavra-passe forte e o **👁** para a ver. Toca em **Guardar**.\n3. O cofre bloqueia sozinho após 2 minutos sem atividade ou ao sair do separador. Podes bloquear a qualquer momento em **🔒 Bloquear** e voltar a abrir com **Desbloquear**.\n\n> **Importante:** tudo fica cifrado neste dispositivo. Se esqueceres a palavra-passe mestra não há recuperação (só apagar o cofre). Para contas críticas, como banco ou email principal, é mais seguro um gestor de palavras-passe dedicado."
         },
         {
-          "t":"6. Cópia de segurança e reposição",
-          "b":"**Criar uma cópia**\n\n1. Abre **Guardar cópia de segurança**.\n2. Decide se queres incluir o cofre de senhas. Quando incluído, o cofre permanece cifrado na cópia; continua a ser necessária a palavra-passe mestra para o usar.\n3. Escolhe **Copiar texto** ou **Guardar ficheiro**.\n4. Guarda a cópia num local seguro e identifica-a com uma data, para distinguires versões antigas. Não publiques o conteúdo nem o deixes numa pasta partilhada sem proteção.\n\nFaz uma cópia antes de limpar os dados do navegador, trocar de dispositivo ou fazer uma reposição. Uma cópia permite transportar dados, mas não substitui a criação periódica de cópias novas.\n\n**Restaurar uma cópia**\n\n1. Seleciona **Importar ficheiro…** ou **Importar texto**, conforme o formato guardado.\n2. Escolhe o modo de reposição:\n   - **Juntar** conserva os dados atuais e acrescenta o que falta. Usa-o quando queres combinar dados sem substituir a coleção atual; revê depois o resultado para detetar entradas repetidas.\n   - **Substituir tudo** apaga os dados atuais e deixa apenas os dados da cópia. Antes de confirmar, cria uma cópia da situação atual se houver algo que possas querer recuperar.\n3. Confirma a seleção e termina em **Importar**.\n4. Verifica tarefas, registos de horas, faltas, notas e, se incluído, o cofre.\n\nConfirma que escolheste o ficheiro correto antes de substituir tudo. Se a cópia incluir o cofre, conserva a palavra-passe mestra: a cópia cifrada não a recupera."
+          "t": "6. Cópia de segurança (Backup)",
+          "b": "1. Em **Guardar cópia de segurança**, decide se incluis o cofre de senhas (continua cifrado).\n2. Escolhe **Copiar texto** ou **Guardar ficheiro** e arquiva-o num sítio seguro (email, pen).\n\n**Repor:** escolhe o ficheiro/texto e o modo — **Juntar** mantém o que já tens e acrescenta o que falta; **Substituir tudo** apaga os dados atuais e fica só o da cópia. Termina em **Importar**.\n\n> Faz uma cópia com regularidade, sobretudo antes de limpar o navegador ou mudar de dispositivo."
         }
       ]
     },
     {
-      "id":"man-venc",
-      "t":"Visão do Vencimento",
-      "d":"Guia de configuração do perfil e contas, análise mensal, consulta do histórico, retenção e cópias de segurança.",
-      "ch":[
+      "id": "man-venc",
+      "t": "Visão do Vencimento",
+      "d": "contas, análise mensal, histórico, backup",
+      "ch": [
         {
-          "t":"1. Perfil e contas bancárias",
-          "b":"**Primeira consulta**\n\nA página inicial apresenta a área **Perfil** e a lista de **Contas bancárias**. Quando o perfil aparece como **por definir**, começa por rever essa área e preencher ou confirmar os dados que a aplicação disponibiliza.\n\nConsulta as contas apresentadas e verifica que estás a olhar para o conjunto esperado. Os dados das contas são reunidos nesta vista para apoiar a consulta da situação global. Se uma conta estiver ausente ou apresentar valores inesperados, confirma primeiro os dados que introduziste e a conta selecionada antes de tirar conclusões da análise.\n\nMantém os dados do perfil e das contas atualizados quando houver alterações relevantes. Evita introduzir dados de acesso bancário: o manual descreve uma vista de contas e análises, não pede as credenciais de autenticação do banco."
+          "t": "1. Contas bancárias e perfil",
+          "b": "A página inicial mostra o **Perfil** (ainda «por definir») e a lista de **Contas bancárias**. Os dados de todas as contas ficam reunidos nesta vista."
         },
         {
-          "t":"2. Analisar um mês",
-          "b":"**Escolher o período**\n\n1. Na página da aplicação, localiza o seletor **Mês**.\n2. Escolhe o mês que pretendes consultar. Confirma o ano, sobretudo quando estás a rever meses de anos diferentes.\n3. Verifica que o perfil e as contas apresentados são os que queres considerar.\n4. Toca em **Analisar este mês** para gerar a análise do período selecionado.\n\nDepois da análise, lê o resultado com atenção e confirma que o mês analisado corresponde ao que escolheste. Usa a análise como uma síntese do período; se precisares de tomar uma decisão financeira, confirma os valores de origem e os movimentos relevantes nas contas.\n\nPara comparar períodos, seleciona cada mês e executa a análise correspondente. Mantém clara a distinção entre meses e guarda ou consulta as análises no **Histórico**."
+          "t": "2. Analisar um mês",
+          "b": "1. Escolhe o **Mês** que queres ver.\n2. Toca em **Analisar este mês** para obter a análise desse período."
         },
         {
-          "t":"3. Histórico de análises",
-          "b":"**Consultar resultados anteriores**\n\nA secção **Histórico** reúne análises anteriores para consulta e comparação. Abre o período que pretendes rever e confirma a data ou o mês indicado antes de comparar o conteúdo com uma análise atual.\n\nPara uma comparação útil, consulta períodos equivalentes e verifica se as contas e os dados de perfil abrangidos são comparáveis. Uma alteração posterior dos dados pode fazer com que uma análise nova não corresponda exatamente ao contexto de uma análise antiga; usa a data do registo para entender a que período se refere.\n\nA quantidade de meses conservados depende da opção **Duração do histórico** nas definições. Se precisares de guardar análises para além desse prazo, escolhe a retenção permanente ou cria uma cópia de segurança antes de os registos antigos serem removidos."
+          "t": "3. Histórico",
+          "b": "A secção **Histórico** reúne as análises anteriores para consulta e comparação."
         },
         {
-          "t":"4. Definições, cópia e reposição",
-          "b":"**Duração do histórico**\n\nNas definições, escolhe entre conservar apenas os últimos **5 meses** ou guardar o histórico **permanentemente**. Seleciona a opção que corresponde à tua necessidade de consulta e revê-a antes de um período de arquivo importante. A retenção permanente mantém mais registos disponíveis, por isso considera se precisas realmente desse histórico.\n\n**Criar uma cópia de segurança**\n\nA opção de backup abrange **todas as contas**. Podes escolher **Descarregar backup** para guardar um ficheiro ou **Copiar backup** para obter o conteúdo em texto. Guarda a cópia num local seguro e identifica-a com a data de criação. Faz uma cópia antes de mudar de dispositivo, limpar os dados do navegador ou restaurar outra versão.\n\n**Restaurar dados**\n\n1. Escolhe **Importar ficheiro…** para carregar um backup guardado como ficheiro ou **Importar texto** para colar o conteúdo copiado.\n2. Seleciona o backup correto e confirma a operação.\n3. Depois da reposição, verifica as contas e o histórico antes de fazer uma nova análise.\n\nUma reposição pode alterar os dados existentes. Antes de a iniciar, cria uma cópia do estado atual se houver informação que queiras preservar. Mantém os backups privados, pois podem conter informação financeira."
+          "t": "4. Definições e backup",
+          "b": "- **Duração do histórico:** guardar só os últimos 5 meses, ou guardar permanentemente (sem limite).\n- **Backup (todas as contas):** *Descarregar backup* (ficheiro) ou *Copiar backup* (texto).\n- **Restaurar:** *Importar ficheiro…* ou *Importar texto*.\n\n> Faz um backup antes de mudar de dispositivo ou limpar o navegador."
+        }
+      ]
+    },
+    {
+      "id": "man-agenda",
+      "t": "Agenda",
+      "d": "tarefas, categorias, prioridades, calendário",
+      "ch": [
+        {
+          "t": "1. Primeiros passos",
+          "b": "A **Agenda** é um espaço simples para organizares trabalhos, tarefas e compromissos num só sítio. Tem um aspeto calmo e pensado para o uso diário.\n\n1. Abre a Agenda a partir da Central de Aplicações, no cartão **Agenda**.\n2. Na primeira vez, a agenda aparece vazia: os contadores mostram **0 tarefas**.\n3. Carrega em **+ Adicionar tarefa** (ou em **+ Nova tarefa**, no topo) para criares a primeira.\n4. À medida que acrescentas tarefas, o ecrã preenche-se sozinho: o resumo, o calendário e a lista atualizam-se.\n\n> Os teus dados ficam guardados **neste navegador**. Lê o capítulo «Os teus dados e a privacidade» antes de começares a usar a sério.\n\n> A Agenda corre num serviço gratuito. Se ninguém a abrir durante algum tempo, o primeiro acesso pode demorar cerca de 50 segundos. Espera um pouco, a página aparece."
+        },
+        {
+          "t": "2. Conhecer o ecrã",
+          "b": "O ecrã tem três zonas.\n\n**Menu lateral (esquerda)**\n- **Agenda:** a vista principal, com o calendário e o teu dia.\n- **Tarefas:** a lista das tuas tarefas. O número ao lado indica quantas tens.\n- **Categorias:** *Todas*, *Trabalho*, *Pessoal*, *Estudo* e *Outros*. Servem para filtrar o que vês.\n- No fundo, o cartão **A minha agenda · Espaço pessoal**, com um menu de opções (os três pontinhos).\n\n**Topo**\n- O botão **+ Nova tarefa** abre o formulário para criar uma tarefa. Ao lado mostra a letra **N**, que é o atalho de teclado.\n- Por baixo, vês onde estás (**O meu espaço / Agenda**).\n\n**Zona principal**\n- Os três cartões de resumo: **Para hoje**, **Por concluir** e **Este mês**.\n- O seletor **Mês / Lista** para mudares a forma de ver as tarefas.\n- A secção **O teu dia**, com as tarefas do dia e um botão **+** para acrescentar mais."
+        },
+        {
+          "t": "3. Os cartões de resumo",
+          "b": "No topo da zona principal há três cartões que te dão o ponto da situação num relance.\n\n- **Para hoje:** quantas tarefas tens marcadas para o dia de hoje.\n- **Por concluir:** quantas tarefas ainda estão por fazer.\n- **Este mês:** quantas tarefas estão agendadas no mês atual.\n\nCada cartão indica o número de tarefas (por exemplo, «3 tarefas»). Os valores atualizam-se sempre que crias, alteras ou eliminas uma tarefa.\n\n> Dica: começa o dia a olhar para **Para hoje** e **Por concluir**. Se o segundo estiver a crescer, é sinal de que estás a acumular tarefas."
+        },
+        {
+          "t": "4. Criar uma tarefa",
+          "b": "1. Carrega em **+ Nova tarefa** (topo), em **+ Adicionar tarefa** ou no **+** de **O teu dia**. Também podes carregar na tecla **N**.\n2. Abre-se a janela **Nova tarefa**, com a pergunta «O que tens em mente?». Preenche os campos:\n3. **Nome da tarefa:** escreve de forma curta e clara, por exemplo «Enviar relatório à equipa».\n4. **Data:** escolhe o dia em que a tarefa deve acontecer. É isto que a coloca no calendário e nos cartões de resumo.\n5. **Hora (opcional):** indica a hora, se a tarefa tiver horário fixo, como uma reunião. Podes deixar em branco.\n6. **Categoria:** escolhe entre *Trabalho*, *Pessoal*, *Estudo* ou *Outros*.\n7. **Prioridade:** escolhe *Normal*, *Alta* ou *Baixa*.\n8. **Notas (opcional):** acrescenta pormenores, links ou lembretes.\n9. Carrega em **Guardar tarefa →**. A tarefa aparece na agenda.\n\nPara desistires, carrega em **Cancelar** ou no **×** no canto da janela. Nada é guardado.\n\n> Regra de ouro da Agenda: «Anota agora, organiza depois». Se estiveres com pressa, escreve só o nome e a data e completa o resto mais tarde."
+        },
+        {
+          "t": "5. Categorias",
+          "b": "As categorias ajudam-te a separar as áreas da tua vida.\n\n- **Trabalho:** reuniões, entregas, tarefas profissionais.\n- **Pessoal:** compromissos, recados, consultas, família.\n- **Estudo:** aulas, trabalhos, leitura, exames.\n- **Outros:** tudo o que não encaixa nas anteriores.\n\n**Para filtrar**\n1. No menu lateral, em **Categorias**, escolhe uma categoria, por exemplo **Trabalho**.\n2. A agenda passa a mostrar apenas as tarefas dessa categoria.\n3. Escolhe **Todas** para voltar a ver tudo.\n\n> Dica: escolhe a categoria certa logo ao criar a tarefa. Assim o filtro funciona bem e não tens de corrigir depois."
+        },
+        {
+          "t": "6. Prioridades",
+          "b": "Cada tarefa tem uma prioridade, para te ajudar a decidir o que fazer primeiro.\n\n- **Alta:** o que é urgente ou tem consequências se falhar. Usa com moderação.\n- **Normal:** o valor por defeito. A maioria das tarefas deve ficar aqui.\n- **Baixa:** o que é bom fazer, mas pode esperar.\n\n**Como escolher**\n1. Pergunta a ti próprio: «O que acontece se isto não for feito hoje?»\n2. Se há um prazo ou alguém depende de ti, marca como **Alta**.\n3. Se pode ser feito a qualquer momento, marca como **Baixa**.\n\n> Se tudo for «Alta», nada se destaca. Tenta ter poucas tarefas de prioridade alta por dia."
+        },
+        {
+          "t": "7. Vistas: Mês e Lista",
+          "b": "Podes ver as tuas tarefas de duas maneiras, com o seletor **Mês / Lista**.\n\n**Mês**\n- Mostra o calendário do mês, com as tarefas nos respetivos dias.\n- É a melhor vista para planear: vês de uma vez os dias carregados e os dias livres.\n\n**Lista**\n- Mostra as tarefas por ordem, uma a seguir à outra.\n- É a melhor vista para trabalhar: sabes exatamente o que tens para fazer.\n\n**Para mudar de vista**\n1. Carrega em **Mês** ou em **Lista**, por cima do calendário.\n2. A vista muda logo, sem perderes nada.\n\nA secção **O teu dia** mostra o que tens marcado para hoje. Usa o **+** que tem ao lado para acrescentar uma tarefa para esse dia."
+        },
+        {
+          "t": "8. Editar, concluir e eliminar",
+          "b": "**Editar uma tarefa**\n1. Carrega na tarefa na agenda ou na lista.\n2. Altera o que for preciso (nome, data, hora, categoria, prioridade ou notas).\n3. Carrega em **Guardar tarefa →**.\n\n**Concluir uma tarefa**\n1. Assinala a tarefa como feita.\n2. Ela deixa de contar em **Por concluir**, e o cartão atualiza-se.\n\n**Eliminar uma tarefa**\n1. Abre a tarefa.\n2. Carrega em **Eliminar**, no fundo da janela.\n\n> Eliminar não tem volta atrás: a tarefa desaparece. Se tens dúvidas, em vez de eliminar, conclui a tarefa."
+        },
+        {
+          "t": "9. Atalhos e rotina sugerida",
+          "b": "**Atalho de teclado**\n- **N:** abre a janela **Nova tarefa**, sem precisares do rato.\n\n**Rotina diária (5 minutos)**\n1. De manhã, abre a Agenda e olha para **Para hoje** e **Por concluir**.\n2. Acrescenta o que te lembrares, com a tecla **N**.\n3. Ao longo do dia, conclui as tarefas à medida que as fazes.\n4. À noite, passa os olhos pelo dia seguinte.\n\n**Rotina semanal (10 minutos)**\n1. Muda para a vista **Mês** e vê quais são os dias mais carregados.\n2. Reorganiza as tarefas para equilibrar a semana.\n3. Elimina o que já não faz sentido."
+        },
+        {
+          "t": "10. Os teus dados e a privacidade",
+          "b": "A Agenda não tem conta nem palavra-passe. Os teus dados ficam guardados **neste navegador**.\n\nO que isto significa na prática:\n- Só tu os vês, mas **apenas neste navegador e neste dispositivo**.\n- Se abrires a Agenda noutro telemóvel, noutro computador ou noutro navegador, ela aparece vazia.\n- Se limparem os dados do navegador (histórico, cookies e dados dos sites), as tarefas são apagadas.\n- Numa janela anónima, as tarefas não são guardadas depois de a fechares.\n\n**Como proteger o teu trabalho**\n1. Usa sempre o mesmo navegador e o mesmo dispositivo.\n2. Não limpes os «dados dos sites» sem teres a certeza.\n3. Para o que é muito importante, guarda também uma nota noutro sítio, por exemplo no **Diário de Trabalho**.\n\n> Não escrevas palavras-passe nem dados sensíveis nas notas das tarefas."
+        },
+        {
+          "t": "11. Problemas e soluções",
+          "b": "**A página demora muito a abrir**\n- Normal no primeiro acesso depois de algum tempo sem uso (até cerca de 50 segundos). Espera e não carregues várias vezes.\n\n**As minhas tarefas desapareceram**\n1. Confirma que estás no mesmo navegador e no mesmo dispositivo onde as criaste.\n2. Confirma que não estás numa janela anónima.\n3. Se os dados do navegador foram limpos, as tarefas não podem ser recuperadas.\n\n**A janela «Nova tarefa» não abre**\n1. Recarrega a página (tecla F5).\n2. Tenta carregar em **+ Nova tarefa** em vez de usares a tecla **N**.\n3. Se a tecla N não funcionar, clica primeiro numa zona vazia da página e tenta de novo.\n\n**Uma tarefa não aparece na agenda**\n1. Confirma a **data** que escolheste.\n2. Em **Categorias**, escolhe **Todas**, porque pode haver um filtro ativo.\n3. Confirma a vista (**Mês** ou **Lista**)."
         }
       ]
     }
