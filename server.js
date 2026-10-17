@@ -79,6 +79,18 @@ function addFail(ip) {
 function ensureData() {
   fs.mkdirSync(DATA_DIR, { recursive: true });
   if (!fs.existsSync(DATA_FILE)) fs.copyFileSync(SEED_FILE, DATA_FILE);
+  migrate();
+}
+// Corrige links antigos (páginas privadas do claude.ai) para os sites no Render
+function migrate() {
+  const d = readData();
+  let changed = false;
+  for (const s of d.sites || []) {
+    if (!/claude\.ai\/artifact\//.test(s.u || '')) continue;
+    if (s.n === 'Diário de Trabalho') { s.u = 'https://diario-de-trabalho.onrender.com'; changed = true; }
+    if (s.n === 'Visão do Vencimento') { s.u = 'https://vencimento.onrender.com'; changed = true; }
+  }
+  if (changed) writeData(d);
 }
 function readData() {
   try { return JSON.parse(fs.readFileSync(DATA_FILE, 'utf8')); }
